@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/934e553cc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="./background-img.jpg" class="background-img">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./monali Thakur.jpeg" class="song-img">
+            <h1>Dugga Elo</h1>
+            <p>Monali Thakur</p>
+
+            <audio id="song">
+                <source src="./Dugga_Elo_Official_Music_Video___Monali_Thakur__.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="song2">
+                <source src="./DHAK BAJA KASHOR BAJA Video Song __ Shreya Ghoshal __ Jeet Gannguli __ Durga Puja Special Songs.mp3">
+            </audio>
+            <audio id="song3">
+                <source src="./Dhaker Taley _ Poran Jai Jolia Re _ Dev _ Subhashree _Abhijeet_Parinita_Sudipto _ Jeet Gannguli_SVF.mp3">
+            </audio>
+            <audio id="song4">
+                <source src="./Elo Je Maa (এলো যে মা) _ Challenge 2 _ Dev _ Puja _ Abhijeet _ Shreya Ghoshal _ Jeet Gannguli _ SVF.mp3">
+            </audio>
+            
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div onclick="leftButton()"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="rightButton()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
